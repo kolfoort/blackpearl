@@ -18,3 +18,10 @@
 .footer-info{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:760px;margin-top:36px;color:#c5c7bd;font-size:14px;line-height:1.9}.footer-info h3{color:#c6b68f;font-size:11px;text-transform:uppercase;letter-spacing:2px;margin:0 0 12px}.footer-info address{font-style:normal}.footer-info a{text-decoration:none}.footer-info a:hover{color:#c6b68f}.footer-phone{display:flex;align-items:center;gap:12px}.footer-whatsapp{display:inline-flex;color:#c6b68f;padding:5px}.footer-whatsapp svg{width:22px;height:22px}@media(max-width:650px){.footer-info{gap:18px;font-size:12px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.footer-info a{overflow-wrap:anywhere}.footer-phone{gap:5px;flex-wrap:wrap}}
 
 .footer-top{display:grid;grid-template-columns:1.2fr 2fr;gap:55px;align-items:start}.footer-top>.brand{display:inline-flex}.footer-top .footer-info{margin:0;max-width:none;gap:40px}.footer-top .brand{padding-top:3px}@media(max-width:1000px){.footer-top{gap:24px;grid-template-columns:1fr 1.8fr}.footer-top .brand{font-size:12px;gap:10px}.footer-top .brand img{width:40px}.footer-top .brand small{font-size:7px;letter-spacing:2px}.footer-top .footer-info{gap:20px}}@media(max-width:650px){.footer-top{grid-template-columns:1fr;gap:28px}.footer-top .footer-info{grid-template-columns:1fr 1fr;margin:0}}
+
+/* Demonstration inventory: visibly unavailable for purchase. */
+.car-photo,.vehicle-gallery,.demo-photo{position:relative;overflow:hidden}
+.not-for-sale{position:absolute;z-index:3;left:50%;top:50%;width:125%;padding:12px 0;transform:translate(-50%,-50%) rotate(-18deg);background:rgba(16,17,16,.78);color:#c7b88d;text-align:center;font-size:clamp(18px,2.5vw,34px);font-weight:700;letter-spacing:.15em;pointer-events:none;border-block:1px solid rgba(199,184,141,.55)}
+.demo-notice{color:#c7b88d;line-height:1.65}
+.car-details .demo-notice{font-size:12px;margin:0 0 12px}
+.vehicle-gallery .not-for-sale{font-size:clamp(24px,4vw,48px)}
