@@ -25,3 +25,6 @@
 .demo-notice{color:#c7b88d;line-height:1.65}
 .car-details .demo-notice{font-size:12px;margin:0 0 12px}
 .vehicle-gallery .not-for-sale{font-size:clamp(24px,4vw,48px)}
+
+/* Sold ribbon colour. */
+.not-for-sale{color:#ef5350;border-color:rgba(239,83,80,.6)}
