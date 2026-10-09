@@ -35,3 +35,6 @@ header{gap:20px}header>.brand{margin-right:auto}header>nav{order:2}header>.heade
 @media(max-width:420px){header .brand{gap:8px}header .brand span{font-size:11px;letter-spacing:1.5px}header .brand small{font-size:6px;letter-spacing:2px}header .brand img{width:36px;height:42px}header{gap:9px}}
 
 .rich-content{line-height:1.8;overflow-wrap:anywhere}.rich-content p{margin:0 0 14px}.rich-content ul{list-style:disc;padding-left:24px}.rich-content ol{padding-left:24px}.rich-content li{padding:4px 0;border:0;font-size:inherit}
+
+/* Champagne section headings on vehicle detail pages. */
+#car h2,#car h3,.vehicle-information h2,.vehicle-information h3{color:var(--gold)}
