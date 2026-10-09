@@ -38,3 +38,6 @@ header{gap:20px}header>.brand{margin-right:auto}header>nav{order:2}header>.heade
 
 /* Champagne section headings on vehicle detail pages. */
 #car h2,#car h3,.vehicle-information h2,.vehicle-information h3{color:var(--gold)}
+
+/* Vehicle names use the signature champagne colour. */
+#car h1,.vehicle-offer h1{color:var(--gold)}
