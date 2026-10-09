@@ -12,3 +12,5 @@
 .listing-power{font-size:12px;color:#797d70;order:1;margin:9px 0 0}.power-line{font-size:14px;color:#8b7b57;margin:8px 0}
 
 .service-art.paint{height:330px;border:0}.polishing-photo{width:100%;height:100%;object-fit:cover;object-position:center}.service-art.paint>span{color:#fff;background:rgba(0,0,0,.65);padding:9px 12px;bottom:14px}@media(max-width:650px){.service-art.paint{height:260px}}
+
+.service-art.dream-car{height:330px;border:0}.dream-car>img{width:100%;height:100%;object-fit:cover;object-position:center}.service-art.dream-car>span{color:#fff;background:rgba(0,0,0,.7);padding:9px 12px;bottom:14px;letter-spacing:1.5px}@media(max-width:650px){.service-art.dream-car{height:260px}.service-art.dream-car>span{font-size:8px;letter-spacing:1px}}
