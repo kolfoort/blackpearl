@@ -1,0 +1,44 @@
+THE BLACK PEARL — SUPABASE INSTELLEN
+
+1. Open je Supabase project > SQL Editor > New query.
+   Plak de volledige inhoud van supabase.sql en klik Run.
+   Dit script is voor de eerste installatie, voer het eenmaal uit.
+   Het maakt de tabellen, beveiliging, fotobucket en drie voorbeeldauto’s aan.
+
+2. Authentication > Users > Add user > Create new user.
+   Maak jouw beheeraccount met je eigen e-mailadres en een sterk wachtwoord.
+   Bevestig het e-mailadres (of gebruik Auto confirm in het dashboard).
+   Schakel openbare nieuwe aanmeldingen uit via Authentication instellingen.
+
+3. Voer een tweede SQL-query uit, met jouw eigen e-mailadres:
+
+insert into public.admins(user_id)
+select id from auth.users where email = 'JOUW-E-MAILADRES';
+
+   Alleen accounts in deze tabel mogen auto’s wijzigen en foto’s uploaden.
+   De publieke sleutel geeft bezoekers geen schrijfrechten.
+
+4. Upload alleen de inhoud van de map website naar de root van jouw GitHub
+   repository. Behoud eventuele bestaande workflowbestanden. Commit en push.
+   Pages: main branch, root. CNAME blijft theblackpearl.nl.
+   De map setup hoeft NIET op de website.
+
+5. Ga naar https://theblackpearl.nl/beheer.html en log in.
+   Voeg een auto toe, vul gegevens in, upload foto’s en zet ze in de juiste volgorde.
+   Publiceren aan = zichtbaar op de website. Uit = concept / verborgen.
+   Klik Opslaan. Geen nieuwe GitHub upload nodig voor wijzigingen in aanbod.
+   Vernieuw de homepage om nieuw aanbod te zien.
+
+Belangrijk:
+- De drie eerste auto’s gebruiken de bestaande illustratieve mockups.
+  Vervang die door echte foto’s en controleer gegevens voor verkoop.
+- Fotobucket car-photos is openbaar: deel geen identiteitsdocumenten of privéfoto’s.
+  Ook foto’s bij een concept zijn via hun directe URL bereikbaar.
+- Foto verwijderen uit een auto verwijdert de koppeling; het bestand blijft in
+  Storage staan. Ongebruikte uploads kun je via Supabase Storage opruimen.
+- De website toont het bestaande statische aanbod als Supabase niet beschikbaar is.
+  Verwijder oude statische kaarten/pagina’s wanneer die niet langer actueel zijn.
+- Dynamische detailpagina’s: auto.html?id=... . Deel deze URL voor een specifieke auto.
+  Voor individuele WhatsApp voertuigpreviewfoto’s is server-side rendering nodig;
+  het bestaande algemene sharelogo en favicon blijven op de homepage behouden.
+- Maak zelf periodiek een export/back-up van je gegevens en foto’s.
