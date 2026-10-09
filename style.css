@@ -41,3 +41,6 @@ header{gap:20px}header>.brand{margin-right:auto}header>nav{order:2}header>.heade
 
 /* Vehicle names use the signature champagne colour. */
 #car h1,.vehicle-offer h1{color:var(--gold)}
+
+/* Bold vehicle copy uses the signature champagne colour. */
+.rich-content strong,.rich-content b,.vehicle-information p strong,.vehicle-information p b{color:var(--gold)}
